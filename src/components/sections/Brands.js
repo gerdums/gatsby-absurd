@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Section, Container } from '@components/global';
+import { Section, Container } from '../common/Navbar2/node_modules/@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
 import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
 import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
 import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
+import { ReactComponent as ElijahTrust } from '../common/Navbar/node_modules/@images/logos/elijah.svg';
 import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
 
 const LOGOS = [
@@ -31,7 +31,7 @@ const LOGOS = [
     link: 'https://nodejs.org',
   },
   {
-    logo: NikeLogo,
+    logo: ElijahTrust,
     link: 'https://nike.com',
   },
   {
@@ -58,21 +58,22 @@ const UsedBy = () => (
     `}
     render={data => (
       <Section id="brands" accent>
-        <StyledContainer>
-          <div>
-            <h1>Used by biggest in tech</h1>
-            <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
-                  {logo()}
-                </ExternalLink>
-              ))}
-            </LogoGrid>
-          </div>
-          <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
-          </Art>
-        </StyledContainer>
+        <Container>
+          <Grid>
+            <div>
+              <h2>Slow and steady wins the race</h2>
+              <p>
+                Gatsby.js builds the fastest possible website. Instead of
+                waiting to generate pages when requested, pre-build pages and
+                lift them into a global cloud of servers — ready to be delivered
+                instantly to your users wherever they are.
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
+            </Art>
+          </Grid>
+        </Container>
       </Section>
     )}
   />
@@ -87,7 +88,7 @@ const LogoGrid = styled.div`
 
   a {
     svg {
-      width: 100%;
+      width: 250%;
     }
   }
 

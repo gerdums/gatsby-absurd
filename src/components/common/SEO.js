@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  title: 'The Elijah Trust',
   url: '',
   author: 'ajayns',
   keywords: ['gatsby', 'site', 'absurd'],

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container } from '@components/global';
+import { Container } from '../common/Navbar2/node_modules/@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
@@ -31,16 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Offering Hope,
                 <br />
-                every way
+               Belonging, and
                 <br />
-                that matters
+                Building Community
               </h1>
               <br />
               <p>
                 <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                  Learn more &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>

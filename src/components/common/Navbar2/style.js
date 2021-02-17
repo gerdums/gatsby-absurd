@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container } from '../Navbar2/node_modules/@components/global';
+import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;

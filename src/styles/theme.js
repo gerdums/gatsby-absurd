@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    primary: `'Noto Serif', serif`,
+    secondary: `'Raleway', sans serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -16,11 +16,11 @@ const theme = {
       dark: '#F6F6F6',
     },
     black: {
-      lighter: '#ABA8AF',
+      lighter: '#8BCDEA',
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#8bd8ed',
+    primary: '#ffffff',
   },
   screen: {
     xs: '575px',

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
+import { Link } from "gatsby"
 
-import { Container } from '../Navbar2/node_modules/@components/global';
+import { Container } from '@components/global';
 import {
   Nav,
   NavItem,
@@ -12,10 +13,10 @@ import {
   Mobile,
 } from './style';
 
-import { ReactComponent as MenuIcon } from '../Navbar2/node_modules/@static/icons/menu.svg';
-import { ReactComponent as ElijahTrust } from '../Navbar2/node_modules/@images/logos/elijah.svg';
+import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import { ReactComponent as ElijahTrust } from '@images/logos/elijah.svg';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+const NAV_ITEMS = ['About', 'nds', 'Team', 'FAQ'];
 
 class Navbar extends Component {
   state = {
@@ -59,7 +60,9 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <ElijahTrust style={{width: "25%"}}></ElijahTrust>
+          <Link to="/">
+          <ElijahTrust style={{width: "100%"}}></ElijahTrust>
+          </Link>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />
